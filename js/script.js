@@ -13,8 +13,9 @@ $(document).ready(function() {
         var celular = $("#celular").val();
     
         var email = $("#email").val();
+        var interes = $("#intereses").val();
        
-
+         //validar los campos
 
         if (nombre == "") {
             $("#mensaje2").fadeIn();
@@ -46,6 +47,12 @@ $(document).ready(function() {
         } else {
             $("#mensaje7").fadeOut();
         }
+
+        if(intereses ==""){
+            alert("Por favor, selecciona una opción de interés.");
+            return false;
+        }
+        
 
 
 
