@@ -8,7 +8,7 @@
     <link rel = "stylesheet" href="css/stylos.css">
     <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet"> <!--para la fuente de google-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"><!--link para los iconos de las redes sociales-->
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
 </head>
@@ -47,28 +47,22 @@
         </header>
         <div class="container-fluid">   
             <div class="row">
-                <div class="col-md-4 navegacion__fotos"> 
-                    <img src="imagenes/Chaqueta.jpg" alt="..." class="img-fluid" id="imagen1">
+                <div class="col-md-4 navegacion__fotos" id="imagen1" style="background-image: url('imagenes/Chaqueta.jpg');"> 
                 </div>
-                <div class="col-md-4 navegacion__fotos">   
-                    <img src="imagenes/Completito.jpg" alt="..." class="img-fluid" id="imagen2">
+                <div class="col-md-4 navegacion__fotos" id="imagen2" style="background-image: url('imagenes/Completito.jpg');">   
                 </div>
-                <div class="col-md-4 navegacion__fotos">   
-                    <img src="imagenes/Completo2.jpg" alt="..." class="img-fluid" id="imagen3">
+                <div class="col-md-4 navegacion__fotos" id="imagen3" style="background-image: url('imagenes/Completo2.jpg');">   
                 </div>        
 
             </div>
         </div>
         <div class="container-fluid">   
             <div class="row">
-                <div class="col-md-4 navegacion__fotos">   
-                    <img src="imagenes/Completo3.jpg" alt="..." class="img-fluid" id="imagen4">
+                <div class="col-md-4 navegacion__fotos" id="imagen4" style="background-image: url('imagenes/Completo3.jpg');">   
                 </div>
-                <div class="col-md-4 navegacion__fotos">   
-                    <img src="imagenes/Body.jpg" alt="..." class="img-fluid" id="imagen5">
+                <div class="col-md-4 navegacion__fotos  imagen-especial" id="imagen5" style="background-image: url('imagenes/Body.jpg');">   
                 </div>
-                <div class="col-md-4 navegacion__fotos">   
-                    <img src="imagenes/Poleron.jpg" alt="..." class="img-fluid" id="imagen6">
+                <div class="col-md-4 navegacion__fotos imagen-especial" id="imagen6" style="background-image: url('imagenes/Poleron.jpg');">   
                 </div>        
 
             </div>
@@ -97,57 +91,93 @@
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
             <script>
-                // Selecciona la imagen por su ID
+                
                 var imagen = document.getElementById('imagen1');
-                // Agrega un evento de clic a la imagen
+                
                 imagen.addEventListener('click', function() {
-                    // Muestra una alerta al hacer clic en la imagen
-                    alert('Chaqueta Niña: $15990');
+                   
+                    swal.fire({
+                        title: 'Chaqueta niña: $15.990',
+                        customClass: {
+                            title: 'titulo',
+                            popup: 'my-popup-class'
+                        }
+                    })
                 });
             </script>
             <script>
-                // Selecciona la imagen por su ID
+                
                 var imagen = document.getElementById('imagen2');
-                // Agrega un evento de clic a la imagen
+               
                 imagen.addEventListener('click', function() {
-                    // Muestra una alerta al hacer clic en la imagen
-                    alert('Conjunto niña rosa: $12990');
+                    
+                    swal.fire({
+                        title: 'Conjunto niña: $12.990',
+                        customClass: {
+                            title: 'titulo',
+                            popup: 'my-popup-class'
+                        }
+                    })
                 });
             </script>
             <script>
-                // Selecciona la imagen por su ID
+               
                 var imagen = document.getElementById('imagen3');
-                // Agrega un evento de clic a la imagen
+                
                 imagen.addEventListener('click', function() {
-                    // Muestra una alerta al hacer clic en la imagen
-                    alert('Pijama niña: $13990');
-                });
+                  
+                    swal.fire({
+                        title: 'Pijama niña: $13.990',
+                        customClass: {
+                            title: 'titulo',
+                            popup: 'my-popup-class'
+                        }
+                    })
+                });;
             </script>
             <script>
-                // Selecciona la imagen por su ID
+                
                 var imagen = document.getElementById('imagen4');
-                // Agrega un evento de clic a la imagen
+                
                 imagen.addEventListener('click', function() {
-                    // Muestra una alerta al hacer clic en la imagen
-                    alert('Conjunto niña rojo: $15990');
+                    
+                    swal.fire({
+                        title: 'Conjunto niña rojo: $15.990',
+                        customClass: {
+                            title: 'titulo',
+                            popup: 'my-popup-class'
+                        }
+                    })
                 });
             </script>
             <script>
-                // Selecciona la imagen por su ID
+               
                 var imagen = document.getElementById('imagen5');
-                // Agrega un evento de clic a la imagen
+                
                 imagen.addEventListener('click', function() {
-                    // Muestra una alerta al hacer clic en la imagen
-                    alert('Enterito niño: $9990');
+                   
+                    Swal.fire({
+                        title: 'Enterito niño: $9.990',
+                        customClass: {
+                            title: 'titulo',
+                            popup: 'my-popup-class'
+                        }
+                    })
                 });
             </script>
             <script>
-                // Selecciona la imagen por su ID
+                
                 var imagen = document.getElementById('imagen6');
-                // Agrega un evento de clic a la imagen
+                
                 imagen.addEventListener('click', function() {
-                    // Muestra una alerta al hacer clic en la imagen
-                    alert('Poleron niño: $11990');
+                   
+                    swal.fire({
+                        title: 'Poleron niño: $11.990',
+                        customClass: {
+                            title: 'titulo',
+                            popup: 'my-popup-class'
+                        }
+                    })
                 });
             </script>
        
